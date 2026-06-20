@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>裁小帮隐私政策</title>
+  <title>裁小帮 / CraftKeep / てしごと帖 Privacy Policy</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -13,6 +13,7 @@
       --card: #fffdf8;
       --line: #e8ded1;
       --accent: #8b684f;
+      --pill: #f1e4d6;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -22,17 +23,24 @@
         --card: #2a231e;
         --line: #463a31;
         --accent: #d0aa87;
+        --pill: #3a2e27;
       }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
     }
     body {
       margin: 0;
       background: var(--bg);
       color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
       line-height: 1.75;
     }
     main {
-      max-width: 820px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 40px 20px 72px;
     }
@@ -43,20 +51,61 @@
       padding: 32px;
       box-shadow: 0 18px 60px rgba(80, 52, 31, 0.08);
     }
+    header {
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+      padding-bottom: 22px;
+    }
     h1 {
       margin: 0 0 8px;
       font-size: 30px;
       line-height: 1.25;
       letter-spacing: 0;
     }
-    .updated {
-      margin: 0 0 28px;
+    .updated,
+    .lead {
       color: var(--muted);
       font-size: 14px;
     }
+    .updated {
+      margin: 0 0 12px;
+    }
+    .lead {
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    nav a {
+      color: var(--fg);
+      background: var(--pill);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    section.language {
+      padding-top: 10px;
+      margin-top: 28px;
+    }
+    section.language + section.language {
+      border-top: 1px solid var(--line);
+      padding-top: 34px;
+    }
     h2 {
-      margin: 32px 0 10px;
-      font-size: 20px;
+      margin: 0 0 14px;
+      font-size: 24px;
+      line-height: 1.35;
+      letter-spacing: 0;
+      color: var(--accent);
+    }
+    h3 {
+      margin: 28px 0 10px;
+      font-size: 18px;
       line-height: 1.35;
       letter-spacing: 0;
       color: var(--accent);
@@ -80,7 +129,10 @@
         border-radius: 16px;
       }
       h1 {
-        font-size: 26px;
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 22px;
       }
     }
   </style>
@@ -88,62 +140,187 @@
 <body>
   <main>
     <article>
-      <h1>裁小帮隐私政策</h1>
-      <p class="updated">最后更新：2026 年 6 月 11 日</p>
+      <header>
+        <h1>裁小帮 / CraftKeep / てしごと帖 Privacy Policy</h1>
+        <p class="updated">最后更新 / Last updated / 最終更新：2026-06-20</p>
+        <p class="lead">本页面包含中文、English、日本語三个版本。This page includes Simplified Chinese, English, and Japanese versions. このページには中国語、英語、日本語のプライバシーポリシーを掲載しています。</p>
+        <nav aria-label="Language">
+          <a href="#zh-Hans">简体中文</a>
+          <a href="#en">English</a>
+          <a href="#ja">日本語</a>
+        </nav>
+      </header>
 
-      <p>《裁小帮》是一款用于手作材料、作品、订单、生产记录和账务辅助管理的工具。我们重视你的隐私。本政策说明《裁小帮》会处理哪些信息、这些信息如何存储，以及你可以如何管理自己的数据。</p>
+      <section id="zh-Hans" class="language" lang="zh-CN">
+        <h2>简体中文</h2>
+        <p>《裁小帮》是一款用于手作材料、作品、订单、生产记录和账务辅助管理的工具。我们重视你的隐私。本政策说明《裁小帮》会处理哪些信息、这些信息如何存储，以及你可以如何管理自己的数据。</p>
 
-      <h2>1. 我们不会做的事</h2>
-      <p>《裁小帮》目前不包含第三方广告、第三方统计 SDK、跨 App 跟踪，也不会出售你的个人信息。</p>
-      <p>我们没有自建账号系统，也不会主动把你的材料、订单、照片、收款记录或备份文件上传到开发者自己的服务器。</p>
+        <h3>1. 我们不会做的事</h3>
+        <p>《裁小帮》目前不包含第三方广告、第三方统计 SDK、跨 App 跟踪，也不会出售你的个人信息。</p>
+        <p>我们没有自建账号系统，也不会主动把你的材料、订单、照片、收款记录或备份文件上传到开发者自己的服务器。</p>
 
-      <h2>2. 你可能在 App 中记录的信息</h2>
-      <p>你可以自行在《裁小帮》中记录以下内容：</p>
-      <ul>
-        <li>材料信息，例如名称、类目、标签、单位、进货批次、价格、库存、报损、退货和备注。</li>
-        <li>作品信息，例如名称、类目、用料清单、预计售价、制作用时、成品库存、分享卡片和图片。</li>
-        <li>订单信息，例如订单类型、买家备注、数量、售价、平台费用、优惠、收款、退款、售后状态和订单备注。</li>
-        <li>生产和库存记录，例如生产入库、材料消耗、成品分配、库存盘点和流水记录。</li>
-        <li>纸样资料，例如纸样名称、文件、图片、标签、来源和使用状态。</li>
-        <li>你选择添加的照片、图片、PDF 或其他资料文件。</li>
-      </ul>
-      <p>这些信息由你主动录入或导入，用于帮助你管理自己的手作业务和库存。</p>
+        <h3>2. 你可能在 App 中记录的信息</h3>
+        <p>你可以自行在《裁小帮》中记录以下内容：</p>
+        <ul>
+          <li>材料信息，例如名称、类目、标签、单位、进货批次、价格、库存、报损、退货和备注。</li>
+          <li>作品信息，例如名称、类目、用料清单、预计售价、制作用时、成品库存、分享卡片和图片。</li>
+          <li>订单信息，例如订单类型、买家备注、数量、售价、平台费用、优惠、收款、退款、售后状态和订单备注。</li>
+          <li>生产和库存记录，例如生产入库、材料消耗、成品分配、库存盘点和流水记录。</li>
+          <li>纸样资料，例如纸样名称、文件、图片、标签、来源和使用状态。</li>
+          <li>你选择添加的照片、图片、PDF 或其他资料文件。</li>
+        </ul>
+        <p>这些信息由你主动录入或导入，用于帮助你管理自己的手作业务和库存。</p>
 
-      <h2>3. 数据存储位置</h2>
-      <p>《裁小帮》使用 Apple 提供的本地存储和 iCloud 能力。你的数据会保存在设备本地，并在你登录 iCloud 且系统允许同步时，通过 Apple iCloud 在你的设备之间同步。</p>
-      <p>iCloud 同步由 Apple 的 CloudKit 服务提供。开发者无法直接读取你私人 iCloud 数据库中的业务数据。不同设备之间的同步需要使用同一个 Apple ID，并开启 iCloud。</p>
+        <h3>3. 数据存储位置</h3>
+        <p>《裁小帮》使用 Apple 提供的本地存储和 iCloud 能力。你的数据会保存在设备本地，并在你登录 iCloud 且系统允许同步时，通过 Apple iCloud 在你的设备之间同步。</p>
+        <p>iCloud 同步由 Apple 的 CloudKit 服务提供。开发者无法直接读取你私人 iCloud 数据库中的业务数据。不同设备之间的同步需要使用同一个 Apple ID，并开启 iCloud。</p>
 
-      <h2>4. 照片、相机和文件权限</h2>
-      <p>当你为材料、作品或纸样添加图片时，App 可能会请求访问相册或相机权限。你选择的图片会用于在 App 内展示和备份；如果开启 iCloud 同步，这些图片也可能随数据同步到你的私人 iCloud 数据库中。</p>
-      <p>当你导入或管理纸样资料、备份文件、CSV/JSON 文件时，App 会通过系统文件选择器或分享面板读取你明确选择的文件。</p>
-      <p>你可以随时在 iOS 系统设置中关闭相册、相机或文件相关权限。关闭权限后，相关功能可能无法正常使用。</p>
+        <h3>4. 照片、相机和文件权限</h3>
+        <p>当你为材料、作品或纸样添加图片时，App 可能会请求访问相册或相机权限。你选择的图片会用于在 App 内展示和备份；如果开启 iCloud 同步，这些图片也可能随数据同步到你的私人 iCloud 数据库中。</p>
+        <p>当你导入或管理纸样资料、备份文件、CSV 或 JSON 文件时，App 会通过系统文件选择器或分享面板读取你明确选择的文件。</p>
+        <p>你可以随时在 iOS 系统设置中关闭相册、相机或文件相关权限。关闭权限后，相关功能可能无法正常使用。</p>
 
-      <h2>5. 订阅和购买</h2>
-      <p>《裁小帮》的高级账户订阅通过 Apple App Store 和 StoreKit 处理。付款、续费、退款和账单信息由 Apple 处理。</p>
-      <p>App 只会读取 Apple 返回的订阅状态，用于判断是否解锁高级账户功能。开发者不会获得你的银行卡号、完整付款信息或 Apple ID 密码。</p>
+        <h3>5. 订阅和购买</h3>
+        <p>《裁小帮》的高级账户订阅通过 Apple App Store 和 StoreKit 处理。付款、续费、退款和账单信息由 Apple 处理。</p>
+        <p>App 只会读取 Apple 返回的订阅状态，用于判断是否解锁高级账户功能。开发者不会获得你的银行卡号、完整付款信息或 Apple ID 密码。</p>
 
-      <h2>6. 备份、导出和分享</h2>
-      <p>《裁小帮》提供完整备份、经营数据导出、CSV/JSON 导出和分享卡片等功能。</p>
-      <p>这些导出文件由你主动生成，并通过 iOS 系统分享面板保存或发送到你选择的位置，例如“文件”App、微信、邮箱、网盘或其他 App。导出后文件的保存位置和后续分享由你自行控制。</p>
-      <p>请妥善保管备份文件，因为其中可能包含材料照片、订单、金额、买家备注和库存记录等敏感信息。</p>
+        <h3>6. 备份、导出和分享</h3>
+        <p>《裁小帮》提供完整备份、经营数据导出、CSV/JSON 导出和分享卡片等功能。</p>
+        <p>这些导出文件由你主动生成，并通过 iOS 系统分享面板保存或发送到你选择的位置，例如“文件”App、微信、邮箱、网盘或其他 App。导出后文件的保存位置和后续分享由你自行控制。</p>
+        <p>请妥善保管备份文件，因为其中可能包含材料照片、订单、金额、买家备注和库存记录等敏感信息。</p>
 
-      <h2>7. 通知</h2>
-      <p>《裁小帮》可能使用本地通知提醒低库存、预留订单或其他你开启的提醒事项。这些通知在你的设备上生成，不依赖第三方推送服务。</p>
-      <p>你可以随时在 iOS 系统设置中关闭通知权限。</p>
+        <h3>7. 通知</h3>
+        <p>《裁小帮》可能使用本地通知提醒低库存、预留订单或其他你开启的提醒事项。这些通知在你的设备上生成，不依赖第三方推送服务。</p>
+        <p>你可以随时在 iOS 系统设置中关闭通知权限。</p>
 
-      <h2>8. 数据保留和删除</h2>
-      <p>你在 App 中记录的数据会保留在你的设备本地或你的 iCloud 中，直到你主动删除、清空、卸载 App，或在 iCloud 中删除相关数据。</p>
-      <p>如果你使用 App 内的回收站、归档或删除功能，部分数据可能会先进入回收站，以便恢复。永久删除后，相关对象可能无法恢复，但历史流水、订单或成本快照可能会保留必要的记录，以保证账务和库存追溯的准确性。</p>
-      <p>如果你导出了备份文件，即使 App 内数据被删除，备份文件中仍可能保留当时导出的数据。你需要自行管理和删除这些备份文件。</p>
+        <h3>8. 数据保留和删除</h3>
+        <p>你在 App 中记录的数据会保留在你的设备本地或你的 iCloud 中，直到你主动删除、清空、卸载 App，或在 iCloud 中删除相关数据。</p>
+        <p>如果你使用 App 内的回收站、归档或删除功能，部分数据可能会先进入回收站，以便恢复。永久删除后，相关对象可能无法恢复，但历史流水、订单或成本快照可能会保留必要的记录，以保证账务和库存追溯的准确性。</p>
+        <p>如果你导出了备份文件，即使 App 内数据被删除，备份文件中仍可能保留当时导出的数据。你需要自行管理和删除这些备份文件。</p>
 
-      <h2>9. 儿童隐私</h2>
-      <p>《裁小帮》面向手作经营和个人库存管理场景，并非专门面向儿童设计。我们不会有意收集儿童个人信息。</p>
+        <h3>9. 儿童隐私</h3>
+        <p>《裁小帮》面向手作经营和个人库存管理场景，并非专门面向儿童设计。我们不会有意收集儿童个人信息。</p>
 
-      <h2>10. 政策更新</h2>
-      <p>如果《裁小帮》的数据处理方式发生重要变化，我们会更新本隐私政策，并在适当位置提示你查看。</p>
+        <h3>10. 政策更新</h3>
+        <p>如果《裁小帮》的数据处理方式发生重要变化，我们会更新本隐私政策，并在适当位置提示你查看。</p>
 
-      <h2>11. 联系我们</h2>
-      <p>如果你对本隐私政策或数据处理方式有疑问，请通过 App Store 产品页中提供的开发者联系方式与我们联系。</p>
+        <h3>11. 联系我们</h3>
+        <p>如果你对本隐私政策或数据处理方式有疑问，请通过 App Store 产品页中提供的开发者联系方式与我们联系。</p>
+      </section>
+
+      <section id="en" class="language" lang="en">
+        <h2>English</h2>
+        <p>CraftKeep is a tool for handmade makers to manage materials, works, orders, production records, and simple business records. We respect your privacy. This policy explains what information the app may process, where it is stored, and how you can manage your data.</p>
+
+        <h3>1. What We Do Not Do</h3>
+        <p>CraftKeep does not include third-party advertising, third-party analytics SDKs, or cross-app tracking. We do not sell your personal information.</p>
+        <p>We do not operate our own account system, and we do not intentionally upload your materials, orders, photos, payment records, or backup files to a developer-owned server.</p>
+
+        <h3>2. Information You May Record in the App</h3>
+        <p>You may choose to record the following information in CraftKeep:</p>
+        <ul>
+          <li>Material information, such as names, categories, tags, units, purchase batches, prices, inventory, write-offs, returns, and notes.</li>
+          <li>Work information, such as names, categories, material recipes, estimated prices, production time, finished stock, share cards, and images.</li>
+          <li>Order information, such as order type, buyer notes, quantities, prices, platform fees, discounts, payments, refunds, after-sales status, and order notes.</li>
+          <li>Production and inventory records, such as production intake, material usage, finished-good allocation, stock counts, and inventory ledger entries.</li>
+          <li>Pattern and reference information, such as pattern names, files, images, tags, sources, and usage status.</li>
+          <li>Photos, images, PDFs, or other files that you choose to add.</li>
+        </ul>
+        <p>This information is entered or imported by you and is used to help you manage your own handmade business and inventory.</p>
+
+        <h3>3. Where Data Is Stored</h3>
+        <p>CraftKeep uses local storage and iCloud capabilities provided by Apple. Your data is stored on your device. If you are signed in to iCloud and system sync is available, your data may sync across your own devices through Apple iCloud.</p>
+        <p>iCloud sync is provided by Apple's CloudKit service. The developer cannot directly read business data stored in your private iCloud database. Syncing across devices requires the same Apple ID and iCloud enabled.</p>
+
+        <h3>4. Photos, Camera, and File Permissions</h3>
+        <p>When you add images for materials, works, or patterns, the app may request access to Photos or Camera. Images you select are used for display and backup inside the app. If iCloud sync is enabled, these images may also sync to your private iCloud database.</p>
+        <p>When you import or manage pattern files, backup files, CSV files, or JSON files, the app reads only the files you explicitly choose through the system file picker or share sheet.</p>
+        <p>You can turn off Photos, Camera, or related file permissions at any time in iOS Settings. Some features may not work normally after those permissions are disabled.</p>
+
+        <h3>5. Subscriptions and Purchases</h3>
+        <p>CraftKeep's Premium subscription is processed by Apple App Store and StoreKit. Payments, renewals, refunds, and billing are handled by Apple.</p>
+        <p>The app only reads the subscription status returned by Apple to decide whether Premium features are unlocked. The developer does not receive your card number, complete payment information, or Apple ID password.</p>
+
+        <h3>6. Backup, Export, and Sharing</h3>
+        <p>CraftKeep provides full backup, business data export, CSV/JSON export, and share card features.</p>
+        <p>These export files are generated by you and saved or sent through the iOS share sheet to a location you choose, such as the Files app, email, cloud storage, or another app. You control where exported files are stored and how they are shared after export.</p>
+        <p>Please keep backup files safe, because they may contain sensitive information such as material photos, orders, amounts, buyer notes, and inventory records.</p>
+
+        <h3>7. Notifications</h3>
+        <p>CraftKeep may use local notifications for low-stock reminders, reserved orders, or other reminders that you enable. These notifications are generated on your device and do not rely on a third-party push notification service.</p>
+        <p>You can turn off notification permission at any time in iOS Settings.</p>
+
+        <h3>8. Data Retention and Deletion</h3>
+        <p>Data you record in the app remains on your device or in your iCloud until you delete it, clear it, uninstall the app, or delete the related iCloud data.</p>
+        <p>If you use in-app trash, archive, or delete features, some data may first move to the trash so it can be restored. After permanent deletion, related objects may not be recoverable. Historical ledger entries, orders, or cost snapshots may keep necessary records to preserve accounting and inventory traceability.</p>
+        <p>If you export a backup file, that file may still contain data from the time of export even after in-app data is deleted. You are responsible for managing and deleting exported backup files.</p>
+
+        <h3>9. Children's Privacy</h3>
+        <p>CraftKeep is intended for handmade business and personal inventory management. It is not designed specifically for children. We do not knowingly collect personal information from children.</p>
+
+        <h3>10. Policy Updates</h3>
+        <p>If CraftKeep's data processing practices materially change, we will update this Privacy Policy and may provide an appropriate notice in the app or on this page.</p>
+
+        <h3>11. Contact Us</h3>
+        <p>If you have questions about this Privacy Policy or how data is handled, please contact us through the developer contact information provided on the App Store product page.</p>
+      </section>
+
+      <section id="ja" class="language" lang="ja">
+        <h2>日本語</h2>
+        <p>てしごと帖は、手作り作家が材料、作品、受注、制作記録、簡単な経営記録を管理するためのツールです。私たちはプライバシーを大切にしています。本ポリシーでは、本アプリが扱う可能性のある情報、その保存場所、およびデータの管理方法について説明します。</p>
+
+        <h3>1. 本アプリが行わないこと</h3>
+        <p>てしごと帖には、第三者広告、第三者分析 SDK、アプリをまたいだトラッキングは含まれていません。個人情報を販売することもありません。</p>
+        <p>独自のアカウントシステムは提供しておらず、材料、受注、写真、入金記録、バックアップファイルを開発者所有のサーバーへ意図的にアップロードすることもありません。</p>
+
+        <h3>2. アプリ内に記録できる情報</h3>
+        <p>てしごと帖では、利用者が任意で次のような情報を記録できます。</p>
+        <ul>
+          <li>材料情報：名称、カテゴリ、タグ、単位、仕入れロット、価格、在庫、廃棄、返品、メモなど。</li>
+          <li>作品情報：名称、カテゴリ、使用材料、想定価格、制作時間、完成品在庫、共有カード、画像など。</li>
+          <li>受注情報：受注種別、購入者メモ、数量、価格、プラットフォーム手数料、割引、入金、返金、アフターサービス状況、受注メモなど。</li>
+          <li>制作・在庫記録：制作入庫、材料消費、完成品の割り当て、棚卸、在庫台帳など。</li>
+          <li>型紙・資料情報：型紙名、ファイル、画像、タグ、入手元、使用状況など。</li>
+          <li>利用者が追加する写真、画像、PDF、その他の資料ファイル。</li>
+        </ul>
+        <p>これらの情報は利用者が入力またはインポートするもので、利用者自身の手作り活動、販売、在庫管理を支援するために使われます。</p>
+
+        <h3>3. データの保存場所</h3>
+        <p>てしごと帖は、Apple が提供するローカル保存機能および iCloud 機能を使用します。データは端末内に保存されます。iCloud にサインインしており、システム上で同期が利用できる場合、Apple iCloud を通じて利用者自身の端末間で同期されることがあります。</p>
+        <p>iCloud 同期は Apple の CloudKit サービスにより提供されます。開発者は、利用者のプライベート iCloud データベースに保存された業務データを直接読むことはできません。端末間で同期するには、同じ Apple ID と iCloud の有効化が必要です。</p>
+
+        <h3>4. 写真、カメラ、ファイル権限</h3>
+        <p>材料、作品、型紙に画像を追加する場合、本アプリは写真またはカメラへのアクセス許可を求めることがあります。選択した画像はアプリ内での表示とバックアップに使用されます。iCloud 同期が有効な場合、これらの画像もプライベート iCloud データベースへ同期されることがあります。</p>
+        <p>型紙ファイル、バックアップファイル、CSV ファイル、JSON ファイルをインポートまたは管理する場合、本アプリはシステムのファイル選択画面または共有シートを通じて、利用者が明示的に選んだファイルのみを読み取ります。</p>
+        <p>iOS の設定から、写真、カメラ、関連するファイル権限をいつでも無効にできます。権限を無効にすると、一部の機能が正常に動作しない場合があります。</p>
+
+        <h3>5. サブスクリプションと購入</h3>
+        <p>てしごと帖のプレミアム購読は、Apple App Store と StoreKit によって処理されます。支払い、更新、返金、請求情報は Apple が管理します。</p>
+        <p>本アプリは、プレミアム機能を解放するために Apple から返される購読状態のみを読み取ります。開発者は、カード番号、完全な支払い情報、Apple ID のパスワードを受け取りません。</p>
+
+        <h3>6. バックアップ、書き出し、共有</h3>
+        <p>てしごと帖は、フルバックアップ、経営データの書き出し、CSV/JSON 書き出し、共有カード機能を提供します。</p>
+        <p>これらの書き出しファイルは利用者が生成し、iOS の共有シートを通じて、ファイル App、メール、クラウドストレージ、その他の App など、利用者が選択した場所へ保存または送信されます。書き出し後の保存先と共有方法は利用者自身が管理します。</p>
+        <p>バックアップファイルには、材料写真、受注、金額、購入者メモ、在庫記録などの機密性の高い情報が含まれる場合があります。取り扱いにはご注意ください。</p>
+
+        <h3>7. 通知</h3>
+        <p>てしごと帖は、在庫少アラート、取り置き受注、その他利用者が有効にしたリマインダーのためにローカル通知を使用することがあります。これらの通知は端末上で生成され、第三者のプッシュ通知サービスには依存しません。</p>
+        <p>iOS の設定から、通知権限をいつでも無効にできます。</p>
+
+        <h3>8. データの保持と削除</h3>
+        <p>アプリ内に記録したデータは、利用者が削除、消去、アプリのアンインストール、または関連する iCloud データの削除を行うまで、端末内または iCloud 内に保持されます。</p>
+        <p>アプリ内のゴミ箱、アーカイブ、削除機能を使用した場合、一部のデータは復元できるよう一時的にゴミ箱へ移動されることがあります。完全に削除した後は、関連するオブジェクトを復元できない場合があります。ただし、会計や在庫の追跡性を保つため、履歴台帳、受注、原価スナップショットには必要な記録が残ることがあります。</p>
+        <p>バックアップファイルを書き出した場合、アプリ内のデータを削除しても、そのバックアップファイルには書き出し時点のデータが残っている可能性があります。書き出したバックアップファイルの管理と削除は利用者自身の責任で行ってください。</p>
+
+        <h3>9. 子どものプライバシー</h3>
+        <p>てしごと帖は、手作り活動、販売、個人在庫管理を目的としたアプリであり、子ども向けに特化して設計されたものではありません。子どもの個人情報を意図的に収集することはありません。</p>
+
+        <h3>10. ポリシーの更新</h3>
+        <p>てしごと帖のデータ処理方法に重要な変更がある場合、本プライバシーポリシーを更新し、必要に応じてアプリ内または本ページでお知らせします。</p>
+
+        <h3>11. お問い合わせ</h3>
+        <p>本プライバシーポリシーまたはデータの取り扱いについて質問がある場合は、App Store の製品ページに記載されている開発者連絡先からお問い合わせください。</p>
+      </section>
     </article>
   </main>
 </body>
